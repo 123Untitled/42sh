@@ -3,6 +3,8 @@
 #include <termios.h>
 #include <unistd.h>
 
+#include "42sh/memory/malloc.hpp"
+
 namespace sh {
 
 
@@ -117,6 +119,8 @@ namespace sh {
 auto main(int ac, char** av) -> int {
 
 	sh::terminal::raw();
+
+	sh::malloc<int>(10U);
 
 	sh::environment::print();
 

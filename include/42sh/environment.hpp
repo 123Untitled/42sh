@@ -5,7 +5,7 @@
 #include <unordered_map>
 #include <iostream>
 
-extern char** environ;
+#include <unistd.h>
 
 
 // -- S H  N A M E S P A C E --------------------------------------------------
